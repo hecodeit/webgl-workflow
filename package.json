@@ -1,0 +1,18 @@
+{
+  "name": "05_workflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo demo.js:bundle.js --live",
+    "build": "browserify demo.js | uglifyjs -cm > bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "budo": "^11.6.3",
+    "uglify-js": "^3.8.0"
+  }
+}
